@@ -1,0 +1,17 @@
+Anonymous vs. Named
+
+You are probably most familiar with function expressions as callback parameters, such as:
+
+setTimeout( function(){
+	console.log("I waited 1 second!");
+}, 1000 );
+
+This is called an "anonymous function expression", because function()... has no name identifier on it. Function expressions can be anonymous, but function declarations cannot omit the name -- that would be illegal JS grammar.
+
+Anonymous function expressions are quick and easy to type, and many libraries and tools tend to encourage this idiomatic style of code. However, they have several draw-backs to consider:
+
+    Anonymous functions have no useful name to display in stack traces, which can make debugging more difficult.
+
+    Without a name, if the function needs to refer to itself, for recursion, etc., the deprecated arguments.callee reference is unfortunately required. Another example of needing to self-reference is when an event handler function wants to unbind itself after it fires.
+
+    Anonymous functions omit a name that is often helpful in providing more readable/understandable code. A descriptive name helps self-document the code in question.
