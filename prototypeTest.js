@@ -37,13 +37,13 @@ Pam.play(); // gives undefind error
 // Play function is added to Jim's Object defination, not in underlying prototype
 
 
-emp2.__proto__.say = funnction() {
+emp2.__proto__.say = function() {
     console.log(this.name + ' is saying some shit');
 }
 
 // OR
 
-Employee.prototype.say = funnction() {
+Employee.prototype.say = function() {
     console.log(this.name + ' is saying some shit');
 }
 
