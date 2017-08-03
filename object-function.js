@@ -4,7 +4,7 @@
 
  var obj = new Object()
 
- // ***************** Heirarchy ********************
+ // ***************** Hierarchy ********************
 
  function Employee(name) {
      this.name = name;
