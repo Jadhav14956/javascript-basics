@@ -1,0 +1,2 @@
+Javascript Guide to objects, functions, scope, prototype and closure.
+http://hangar.herokuapp.com/javascript/guide
